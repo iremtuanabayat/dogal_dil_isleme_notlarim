@@ -1,0 +1,35 @@
+"""
+==============================================================================
+SAYMA TABANLI METODLAR vs TAHMİN METODLARI
+==============================================================================
+
+1. SAYMA TABANLI METODLAR (Count-based Methods)
+------------------------------------------------------------------------------
+* Örnek Algoritmalar / Yaklaşımlar:
+  - LSA, HAL (Lund & Burgess)
+  - COALS, Hellinger-PCA (Rohde et al, Lebret & Collobert)
+
+* Avantajları:
+  + Hızlı eğitim süresine sahiptir.
+  + İstatistiği efektif bir şekilde kullanır.
+
+* Dezavantajları / Sınırlılıkları:
+  - Öncelikle sadece kelime benzerliği yakalamaya çalışır.
+  - Fazla sayıdaki (yüksek frekanslı) kelimelere gereksiz önem verilir.
+
+
+2. TAHMİN METODLARI (Prediction-based Methods)
+------------------------------------------------------------------------------
+* Örnek Algoritmalar / Yaklaşımlar:
+  - Skip-gram / CBOW (Word2Vec - Mikolov et al)
+  - NNLM, HLBL, RNN (Bengio et al; Collobert & Weston; Huang et al; Mnih & Hinton)
+
+* Dezavantajları / Sınırlılıkları:
+  - Corpus büyüklüğüne göre eğitim süresi yavaş olabilir.
+  - Global istatistiği efektif bir şekilde kullanmaz.
+
+* Avantajları:
+  + Kelime benzerliği dışında kompleks bağlantıları / ilişkileri de yakalayabilir.
+  + Farklı NLP problemlerinde son derece başarılı sonuçlar verir.
+==============================================================================
+"""
